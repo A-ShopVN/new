@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>None</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ứng Dụng Học Từ Vựng Tiếng Anh</h1>
+        
+        <div class="input-section">
+            <label for="word">Nhập từ vựng:</label>
+            <input type="text" id="word" placeholder="Nhập từ vựng tiếng Anh">
+            <label for="definition">Nhập nghĩa của từ:</label>
+            <input type="text" id="definition" placeholder="Nhập nghĩa tiếng Việt">
+            <button id="addWordBtn">Thêm Từ</button>
+        </div>
+
+        <h2>Câu hỏi</h2>
+        <div class="quiz-container">
+            <p id="question">Câu hỏi sẽ xuất hiện ở đây.</p>
+            <div id="answers"></div>
+        </div>
+        <h3>Danh sách từ đã nhập:</h3>
+        <div id="wordList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
