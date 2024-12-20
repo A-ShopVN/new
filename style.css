@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f7fc;
@@ -25,7 +24,6 @@ body {
     animation: scaleIn 0.5s ease-in-out forwards;
 }
 
-
 @keyframes scaleIn {
     0% {
         transform: scale(0.9);
@@ -37,7 +35,6 @@ body {
     }
 }
 
-
 h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -47,7 +44,7 @@ h1 {
     letter-spacing: 1px;
 }
 
-
+/* Input Section */
 .input-section input {
     padding: 12px;
     margin: 10px 0;
@@ -83,6 +80,7 @@ button:active {
     transform: translateY(2px);
 }
 
+/* Quiz container */
 .quiz-container {
     background-color: #ffffff;
     padding: 25px;
@@ -143,5 +141,67 @@ button:active {
     }
     100% {
         opacity: 1;
+    }
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+        max-width: 90%; /* Mở rộng tối đa phần tử */
+    }
+
+    h1 {
+        font-size: 2rem; /* Giảm kích thước tiêu đề trên màn hình nhỏ */
+    }
+
+    .input-section input,
+    button {
+        width: 100%; /* Đảm bảo input và button rộng đầy đủ màn hình */
+    }
+
+    .quiz-container {
+        padding: 20px;
+    }
+
+    .answer-btn {
+        padding: 10px;
+    }
+
+    #score {
+        font-size: 1.5rem;
+    }
+}
+
+/* Đối với màn hình nhỏ hơn 480px (smartphone nhỏ) */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem; /* Tiêu đề nhỏ hơn trên các điện thoại rất nhỏ */
+    }
+
+    .container {
+        padding: 15px;
+        max-width: 95%; /* Cung cấp nhiều không gian hơn cho các thiết bị cực kỳ nhỏ */
+    }
+
+    .input-section input {
+        font-size: 0.9rem; /* Giảm kích thước font cho input */
+    }
+
+    button {
+        padding: 10px 20px; /* Button nhỏ hơn */
+        font-size: 1rem;
+    }
+
+    .quiz-container {
+        padding: 15px;
+    }
+
+    .answer-btn {
+        padding: 8px;
+    }
+
+    #score {
+        font-size: 1.4rem;
     }
 }
